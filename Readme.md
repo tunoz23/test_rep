@@ -1,3 +1,3 @@
 # Hi
 
-# vele yarrak dedim yin mi dedim
+# Trying to figure out how to use git.
