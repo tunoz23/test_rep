@@ -6,15 +6,26 @@
 #define LOG(a) cout << a << endl
 using namespace std;
 
-void math(int arr_1){
+int getAbsSum(const vector<int>& vect){
+    unsigned long long size = vect.size();
+    int abs_sum = 0;
+    for (int i = 0; i<size; i++)
+    {
+        int current_element = vect[i];
 
-    LOG(arr_1);
+        if (current_element < 0){
+            current_element = 0 - current_element;
+        }
+        abs_sum += current_element;
+    }
+
+    return abs_sum;
 }
 
 int main()
 {
-    int int_array[] = {10, 20, 30 ,40};
+    vector<int> v1 = {-10, 20, 30 ,40};
     int a = 10;
-    math(a);
+    LOG(math(v1));
     return 0;
 }
