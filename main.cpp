@@ -2,18 +2,15 @@
 // Created by TUN on 13.09.2022.
 //
 #include <iostream>
-#include <string>
+#define LOG(a) cout << a << endl
+using namespace std;
 
-class Player{
-private:
-    std::string m_Name;
-public:
-    Player(const std::string& name)
-        : m_Name(name) {}
-
-};
+void math(const int* a){
+  LOG(a);
+}
 
 int main()
 {
+
     return 0;
 }
